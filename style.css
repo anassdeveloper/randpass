@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+:root{
+    --color-main:#30332E;
+    --color-second:#FFFBFC;
+    --color-ther:#62BBC1;
+    --color-helper:#EC058E;
+    --font-heading:'Righteous', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h3{
+    font-family: var(--font-heading);
+    font-size: 4.8rem;
+    color: var(--color-second);
+}
+
+.container{
+    background-color: var(--color-ther);
+    max-width: 100rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 2.4rem;
+    
+}
+.header__des{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: -2rem;
+    color: var(--color-main);
+}
+.content{
+    padding: 1rem 3rem;
+}
+.content__form{
+  border: 1px dashed var(--color-second);
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3.4rem;
+  padding: 1rem;
+}
+.content__form--box{
+   display: flex;
+   align-items: center;
+   gap: .8rem;
+   font-size: 2rem;
+}
+.check{
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.but{
+  display: block;
+  margin: 3rem auto;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-helper);
+  background-color: var(--color-second);
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  pointer-events: none;
+}
+.but:hover{
+    transform: scale(1.1);
+    color: var(--color-ther);
+}
+
+.result{
+    font-size: 3.2rem;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--color-helper);
+    text-shadow: 0 .3rem .1rem rgba(230, 230, 230, 0.568);
+}
+
+.result .result-input{
+    font-size: 1.6rem;
+    padding: .5rem 1.2rem;
+}
+
+#range_value{
+
+    background: rgb(247, 96, 96);
+
+    padding: .5rem;
+
+    height: 1.2rem;
+    
+    outline: none;
+
+    transition: background 450ms ease-in;
+
+    -webkit-appearance: none;
+
+    border-radius: .5rem;
+}
+

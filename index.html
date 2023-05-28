@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandPass</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h3 class="header__heading">RandPass</h3>
+            <span class="header__des">Get Your Quik password</span>
+        </header>
+        <section class="content">
+             <form action="" class="content__form">
+                <div class="content__form--box">
+                    <label for="easy">Easy</label>
+                    <input type="checkbox" name="e" id="easy" class="check">
+                </div>
+                <div class="content__form--box">
+                    <label for="meduim">Meduim</label>
+                    <input type="checkbox" name="m" id="meduim" class="check">
+                </div>
+                <div class="content__form--box">
+                    <label for="hard">Hard</label>
+                    <input type="checkbox" name="h" id="hard" class="check">
+                </div>
+             
+                
+             </form>
+             <div class="rang-group">
+                <label class="range_result">6</label>
+                <input type="range" min="6" max="37" value="6" id="range_value"/>
+             </div>
+             <button id="generate" type="submit" class="but">GENERATE</button>
+             <div class="result"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
